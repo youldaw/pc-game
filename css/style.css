@@ -240,7 +240,7 @@ header .header-right .cart-btn .cart-count {
 }
 .game-block .game-img img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 12px;
 }
 .game-block .game-img .device-model {
 	display: inline-block;
@@ -481,6 +481,12 @@ header .header-right .cart-btn .cart-count {
 	display: flex;
     align-items: center;
     justify-content: flex-start;
+	cursor: pointer;
+	transition: .3s all ease;
+}
+.info-sec .info-block:hover {
+	filter: drop-shadow(0px 4px 49px rgba(0, 173, 158, 0.36));
+	transform: translate(0px, -12px);
 }
 .info-sec .info-block .for-bg {
 	position: absolute;
