@@ -904,11 +904,11 @@ header .header-right .cart-btn .cart-count {
 	margin-bottom: 5px;
 	color: #676767;
 }
-.comment-form .form-tags {
+.comment-form .form-mark {
 	display: flex;
 	align-items: center;
 }
-.comment-form .your-mark a {
+.comment-form .your-mark button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -920,30 +920,85 @@ header .header-right .cart-btn .cart-count {
 	font-size: 16px;
 	line-height: 19px;
 	color: #FFFFFF;
+	padding: 0;
 }
-.comment-form .your-mark a:last-child {
+.comment-form .your-mark button:last-child {
 	margin-right: 0;
 }
-.comment-form .your-mark a.one {
+.comment-form .your-mark button.one {
 	background: #DC8164;
 }
-.comment-form .your-mark a.two {
+.comment-form .your-mark button.two {
 	background: #CEC600;
 }
-.comment-form .your-mark a.three {
+.comment-form .your-mark button.three {
 	background: #FFAD4D;
 }
-.comment-form .your-mark a.four {
+.comment-form .your-mark button.four {
 	background: #0098AD;
 }
-.comment-form .your-mark a.five {
+.comment-form .your-mark button.five {
 	background: #00AD9E;
 }
 
-
-
-
-
+.comment-form .form-block {
+	margin-top: 20px;
+}
+.comment-form .form-block .form-group {
+	margin-bottom: 10px;
+}
+.comment-form .form-block .form-group span {
+	font-size: 16px;
+	line-height: 20px;
+	color: #676767;
+	margin-bottom: 5px;
+}
+.detail-comment .form-block input {
+	width: 100%;
+	height: 40px;
+	background: #002522;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 10px;
+	color: #00AD9E;
+}
+.detail-comment .form-block textarea {
+	width: 100%;
+	height: 126px;
+	background: #002522;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	color: #00AD9E;
+}
+.detail-comment .form-block .agree p {
+	font-size: 13px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.detail-comment .form-block .agree p a {
+	color: #DC8164;
+}
+.detail-comment .form-block .agree p a:hover:last-child {
+	text-decoration: underline;
+}
+.detail-comment .form-block .form-btn button {
+	background: #00AD9E;
+	border-radius: 10px;
+	padding: 15px 45px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+.detail-comment .form-block .form-btn button:hover {
+	filter: drop-shadow(0px 4px 49px rgba(0, 173, 158, 0.36));
+}
+/* ////////////// */
+.similar-games {
+	padding-top: 40px;
+}
 
 /* ////////////////////////// */
 footer {
