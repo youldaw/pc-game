@@ -1,9 +1,16 @@
 $(function (){
     
-    $('.menu-opener, .menu-closer').on('click',function(e){
+    $('.cart-btn').on('click',function(e){
         e.preventDefault();
-        $('header .navbar').toggleClass('active');
-        $('header').toggleClass('active');
+        $('.head-drop').toggleClass('active');
+    });
+
+    $(document).mouseup(function (e){
+        var div = $(".head-drop");
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+            div.removeClass('active');
+        }
     });
 
     var btn = $('#scroll-top');
@@ -12,6 +19,7 @@ $(function (){
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
     });
+    
 
 });
 
