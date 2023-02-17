@@ -70,6 +70,37 @@
 									<img src="images/drop-arrow-top.png" alt="">
 								</div>
 
+								<div class="cart-title">
+									<h3>Корзина </h3>
+									<span>(2 игры)</span>
+								</div>
+								<div class="payment-item">
+									<div class="item-left">
+										<div class="item-img">
+											<img src="images/payment-img.jpg" alt="">
+										</div>
+										<div class="item-text">
+											<p>DOOM Eternal Deluxe Edition - PS4 and PS5</p>
+										</div>
+									</div>
+									<div class="item-right">
+										<div class="item-price">
+											<p>$46.99</p>
+											<del>$39.99</del>
+										</div>
+										<a href="#!" class="item-delete">
+											<span class="icon">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.5 11.25L7.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round"/>
+													<path d="M10.5 11.25L10.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round"/>
+													<path d="M2.25 5.25H15.75V5.25C15.5178 5.25 15.4017 5.25 15.304 5.25963C14.3544 5.35315 13.6032 6.10441 13.5096 7.05397C13.5 7.15175 13.5 7.26783 13.5 7.5V11C13.5 12.8856 13.5 13.8284 12.9142 14.4142C12.3284 15 11.3856 15 9.5 15H8.5C6.61438 15 5.67157 15 5.08579 14.4142C4.5 13.8284 4.5 12.8856 4.5 11V7.5C4.5 7.26783 4.5 7.15175 4.49037 7.05397C4.39685 6.10441 3.64559 5.35315 2.69603 5.25963C2.59825 5.25 2.48217 5.25 2.25 5.25V5.25Z" stroke="#676767" stroke-width="2" stroke-linecap="round"/>
+													<path d="M7.55111 2.52794C7.63657 2.44821 7.82489 2.37775 8.08686 2.32749C8.34882 2.27724 8.6698 2.25 9 2.25C9.3302 2.25 9.65118 2.27724 9.91314 2.32749C10.1751 2.37775 10.3634 2.44821 10.4489 2.52794" stroke="#676767" stroke-width="2" stroke-linecap="round"/>
+												</svg>
+											</span>
+											<span class="text">удалить</span>
+										</a>
+									</div>
+								</div>
 								<div class="payment-item">
 									<div class="item-left">
 										<div class="item-img">
@@ -133,78 +164,124 @@
                         <h3>Выберите способ оплаты</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="payment-methods">
-                            <div class="payment-in">
-                                <label class="control control--checkbox">
-                                    <input type="checkbox"/>
-                                    <div class="control__indicator"></div>
-                                    <div class="payment-name">
-                                        <p>Тинькофф</p>
-                                        <span>+ комиссия за обслуживание в размере 20 рублей.</span>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="payment-img">
-                                <img src="images/payment-tinkoff.png" alt="">
-                            </div>
-                        </div>
-                        <div class="payment-methods">
-                            <div class="payment-in">
-                                <label class="control control--checkbox">
-                                    <input type="checkbox"/>
-                                    <div class="control__indicator"></div>
-                                    <div class="payment-name">
-                                        <p>Енот</p>
-                                        <span>+ комиссия за обслуживание в размере 20 рублей.</span>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="payment-img">
-                                <img src="images/payment-enot.png" alt="">
-                            </div>
-                        </div>
-                        <div class="payment-methods">
-                            <div class="payment-in">
-                                <label class="control control--checkbox">
-                                    <input type="checkbox"/>
-                                    <div class="control__indicator"></div>
-                                    <div class="payment-name">
-                                        <p>Cryptocloud</p>
-                                        <span>+ комиссия за обслуживание в размере 20 рублей.</span>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="payment-img">
-                                <img src="images/payment-crypto.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+				<form action="#!" id="detail-pay-form">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="payment-methods">
+								<div class="payment-in">
+									<label class="control control--checkbox">
+										<input type="checkbox"/>
+										<div class="control__indicator"></div>
+										<div class="payment-name">
+											<p>Тинькофф</p>
+											<span>+ комиссия за обслуживание в размере 20 рублей.</span>
+										</div>
+									</label>
+								</div>
+								<div class="payment-img">
+									<img src="images/payment-tinkoff.png" alt="">
+								</div>
+							</div>
+							<div class="payment-methods">
+								<div class="payment-in">
+									<label class="control control--checkbox">
+										<input type="checkbox"/>
+										<div class="control__indicator"></div>
+										<div class="payment-name">
+											<p>Енот</p>
+											<span>+ комиссия за обслуживание в размере 20 рублей.</span>
+										</div>
+									</label>
+								</div>
+								<div class="payment-img">
+									<img src="images/payment-enot.png" alt="">
+								</div>
+							</div>
+							<div class="payment-methods">
+								<div class="payment-in">
+									<label class="control control--checkbox">
+										<input type="checkbox"/>
+										<div class="control__indicator"></div>
+										<div class="payment-name">
+											<p>Cryptocloud</p>
+											<span>+ комиссия за обслуживание в размере 20 рублей.</span>
+										</div>
+									</label>
+								</div>
+								<div class="payment-img">
+									<img src="images/payment-crypto.svg" alt="">
+								</div>
+							</div>
+						</div>
+	
+						<div class="col-lg-5">
+							<div class="payment-detail">
+								<div class="detail-title">
+									<p>Детали оплаты</p>
+								</div>
+								<div class="payment-detail-top">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<span>Имя</span>
+												<input type="text" name="name" id="payment-detail-name" placeholder="aeshi">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<span>Телеграм(не обязательно)</span>
+												<input type="text" name="tg-nik" id="tg-nik" placeholder="aeshin228">
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="form-group">
+												<div class="form-group">
+													<span>Есть ли у вас турецкий аккаунт Ps Network</span>
+													<div class="select">
+														<select>
+															<option value="Да">Да</option>
+															<option value="Нет">Нет</option>
+														</select>
+														<div class="select-arrow"><img src="images/select-arrow.svg" alt=""></div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<span>PlayStation Network ID (e-mail привязанный к PSN) *</span>
+												<input type="email" name="email" id="detail-email" required>
+											</div>
+											<div class="form-group">
+												<span>Пароль от PSN *</span>
+												<input type="password" name="password" id="detail-password" required>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                    <div class="col-lg-5">
-                        <div class="payment-info">
-                            <div class="info-top payment-total">
-                                <p>Товары</p>
-                                <span>93.98 US$</span>
-                            </div>
-                            <div class="info-promo payment-total">
-                                <p>Применить промо-код</p>
-                                <div class="form-group">
-                                    <input type="text" name="promocode2" id="promocode2" placeholder="Промокод">
-                                    <button type="submit">Применить</button>
-                                </div>
-                            </div>
-                            <div class="info-summa payment-total">
-                                <p>Сумма к оплате</p>
-                                <span>93.98 US$</span>
-                            </div>
-                            <div class="info-btn payment-total">
-                                <button type="submit">Перейти к оплате</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+							<div class="payment-info">
+								<div class="info-top payment-total">
+									<p>Товары</p>
+									<span>93.98 US$</span>
+								</div>
+								<div class="info-promo payment-total">
+									<p>Применить промо-код</p>
+									<div class="form-group">
+										<input type="text" name="promocode2" id="promocode2" placeholder="Промокод">
+										<button type="submit">Применить</button>
+									</div>
+								</div>
+								<div class="info-summa payment-total">
+									<p>Сумма к оплате</p>
+									<span>93.98 US$</span>
+								</div>
+								<div class="info-btn payment-total">
+									<button type="submit">Перейти к оплате</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
             </div>
         </section>
 

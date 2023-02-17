@@ -15,10 +15,13 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 button:focus,
-textarea:focus,
-select:focus{
-	outline: none!important;
+textarea:focus{
 	-webkit-appearance:none;
+	outline: none!important;
+	box-shadow: none;
+}
+.select:focus {
+	outline: none!important;
 	box-shadow: none;
 }
 input:focus{
@@ -37,7 +40,7 @@ a, input, img, button, span, svg {
 
 .wrapper {
 	overflow: hidden;
-	background: linear-gradient(360deg, #141518 14.49%, #1A1B1D 113.14%);
+	background: linear-gradient(360deg, #222326 14.5%, #1A1B1D 113.15%);
 }
 
 
@@ -251,7 +254,6 @@ header .header-right .cart-btn .cart-count {
 	z-index: 10;
 	background: #222326;
 	transition: .5s all ease;
-	height: 100vh;
 }
 .head-drop.active {
 	top: 55px;
@@ -265,6 +267,25 @@ header .header-right .cart-btn .cart-count {
 	position: absolute;
 	right: 50px;
 	top: -15px;
+}
+/* // */
+.head-drop .cart-title {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+.head-drop .cart-title h3 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+.head-drop .cart-title span {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 24px;
+	color: #676767;
+	margin-left: 8px;
 }
 /* /////////// */
 .main-sec {
@@ -1097,6 +1118,45 @@ header .header-right .cart-btn .cart-count {
 	line-height: 20px;
 	color: #ADADAD;
 }
+/* ///// */
+.payment-detail .detail-title p {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.payment-detail .payment-detail-top .form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+.payment-detail .payment-detail-top .form-group:last-child {
+	margin-bottom: 20px;
+}
+.payment-detail .payment-detail-top .form-group span {
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+}
+.payment-detail .payment-detail-top .form-group input {
+	background: #2E2E2E;
+	border-radius: 10px;
+	padding: 9px 14px;
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	color: #00AD9E;
+}
+.payment-detail .payment-detail-top .form-group input::placeholder {
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #585858;
+}
+
 
 .payment-info .payment-total {
 	display: flex;
@@ -1499,6 +1559,33 @@ footer .footer-end a:hover {
   background: #7b7b7b;
 }
 
+.payment-detail .select {
+	position: relative;
+}
+.payment-detail select {
+  padding: 10px 26px 10px 10px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #fff;
+  cursor: pointer;
+  background: #2E2E2E;
+  border-radius: 10px;
+  border: none;
+}
+.payment-detail .select-arrow {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.payment-detail select::-ms-expand {
+  display: none;
+}
+.payment-detail select option {
+	background: #141518;
+	border-radius: 0px 0px 10px 10px;
+}
 /* custom scrollbar */
 
 .for-scroll::-webkit-scrollbar-track {
