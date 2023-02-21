@@ -40,7 +40,7 @@ a, input, img, button, span, svg {
 
 .wrapper {
 	overflow: hidden;
-	background: linear-gradient(360deg, #222326 14.5%, #1A1B1D 113.15%);
+	background: linear-gradient(360deg, #141518 14.49%, #1A1B1D 113.14%);
 }
 
 
@@ -581,7 +581,7 @@ header .header-right .cart-btn .cart-count {
 	z-index: 2;
 }
 .info-sec .info-text {
-	margin-left: 35px;
+	margin-left: 30px;
 	text-align: center;
 }
 .info-sec .info-text h4 {
@@ -591,16 +591,23 @@ header .header-right .cart-btn .cart-count {
 	color: #FFFFFF;
 }
 .info-sec .info-block.best-game .info-text h4 {
-	font-size: 30px;
-	line-height: 38px;
-}
-.info-sec .info-block.fire-game .info-text h4 {
-	font-size: 24px;
+	font-size: 26px;
 	line-height: 30px;
 }
+.info-sec .info-block.fire-game {
+	margin-left: 0;
+}
+.info-sec .info-block.fire-game .info-img {
+	width: 40%;
+}
+.info-sec .info-block.fire-game .info-text h4 {
+	font-size: 20px;
+	line-height: 24px;
+	margin-right: 5px;
+}
 .info-sec .info-text span {
-	font-size: 15px;
-	line-height: 19px;
+	font-size: 14px;
+	line-height: 18px;
 	color: #fff;
 }
 /* /////////////////////////// */
@@ -720,7 +727,7 @@ header .header-right .cart-btn .cart-count {
 }
 
 .catalog-side {
-	height: 200px;
+	height: 320px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -876,14 +883,16 @@ header .header-right .cart-btn .cart-count {
 .detail-comment .title h2 span {
 	font-weight: 400;
 }
-.detail-comment .comment-block {
+.detail-comment .comment-content {
 	padding: 20px;
 	background: #141518;
 	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.detail-comment .comment-block {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin-bottom: 20px;
 }
 .detail-comment .comment-img,
 .detail-comment .comment-rating {
@@ -1001,6 +1010,7 @@ header .header-right .cart-btn .cart-count {
 	line-height: 19px;
 	color: #FFFFFF;
 	padding: 0;
+	border: none;
 }
 .comment-form .your-mark button:last-child {
 	margin-right: 0;
@@ -1071,6 +1081,7 @@ header .header-right .cart-btn .cart-count {
 	font-size: 16px;
 	line-height: 19px;
 	color: #FFFFFF;
+	border: none;
 }
 .detail-comment .form-block .form-btn button:hover {
 	filter: drop-shadow(0px 4px 49px rgba(0, 173, 158, 0.36));
@@ -1492,8 +1503,8 @@ footer .footer-end a:hover {
   display: block;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 15px;
   cursor: pointer;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 .control input {
@@ -1696,7 +1707,317 @@ footer .footer-end a:hover {
 
 
 
+@media only screen and (max-width: 992px){
+	.pc {display: none !important;}
+	.mob {display: block;}
+	header .navbar .dropdown .dropdown-toggle {
+		display: inline-block;
+	}
+	header .navbar-collapse {
+		display: flex;
+	}
+	header .navbar {
+		flex-wrap: nowrap;
+	}
+	header {
+		padding: 0;
+	}
+	header .navbar {
+		padding: 12px 20px;
+	}
+	header .navbar .dropdown .dropdown-toggle {
+		width: 32px;
+		height: 32px;
+		padding: 3px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	header .navbar .dropdown .dropdown-toggle .icon {
+		margin-right: 0;
+	}
+	header .navbar .dropdown .dropdown-toggle .icon span {
+		width: 14px;
+		margin-bottom: 3px;
+	}
+	header .navbar .dropdown .dropdown-toggle .icon span.two {
+		width: 10px;
+	}
+	header .navbar .mob a img {
+		width: 46px;
+		height: 46px;
+	}
+	.head-card,
+	header .header-right a {
+		margin-left: 10px;
+	}
+	header .header-right a svg {
+		width: 24px;
+		height: 24px;
+	}
+	header .header-right .cart-btn .cart-count {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.title {
+		margin-bottom: 10px;
+	}
+	.title h2 {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.game-block .game-title h4 {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.game-block .game-price span {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.game-block .game-img .discount-percent,
+	.game-block .game-img .device-model {
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.payment-link {
+		padding: 20px 20px 30px;
+	}
+	.payment-link .payment-img img {
+		width: 80%;
+	}
+	.payment-cards {
+		margin: 0;
+	}
+	.new-games {
+		padding: 20px 0 0;
+	}
+	.info-sec .info-block.fire-game .info-text h4{
+		font-size: 24px;
+	}
+	footer .footer-menu {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	footer .footer-menu a {
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	footer .footer-menu a:nth-child(1) {
+		order: 1;
+	}
+	footer .footer-menu a:nth-child(2) {
+		order: 2;
+	}
+	footer .footer-menu a:nth-child(3) {
+		order: 3;
+	}
+	footer .footer-menu a:nth-child(4) {
+		order: 5;
+	}
+	footer .footer-menu a:nth-child(5) {
+		order: 4;
+	}
+	.free-games {
+		padding: 20px 0 0;
+	}
+	footer {
+		padding: 10px 0;
+	}
+	footer .footer-end .ftr-info p {
+		margin: 0;
+		font-size: 13px;
+		line-height: 14px;
+	}
+	footer .footer-end {
+		margin-top: 10px;
+	}
+	.detail-card .detail-top {
+		height: 300px;
+	}
+	.detail-card .detail-left {
+		padding: 20px;
+	}
+	.detail-card .detail-left .detail-text span, .detail-card .detail-left .detail-text p {
+		font-size: 13px;
+	}
+	.detail-card .detail-right {
+		padding: 25px 20px;
+		margin-top: 20px;
+	}
+	.detail-comment {
+		padding-top: 20px;
+	}
+	.detail-comment .comment-img img {
+		width: 100%;
+		height: 100%;
+	}
+	.detail-comment .comment-img, .detail-comment .comment-rating {
+		min-width: 44px;
+		height: 44px;
+		margin-right: 10px;
+	}
+	.detail-comment .comment-rating span {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.detail-comment .comment-content {
+		padding: 10px 20px;
+	}
+	.detail-comment .comment-block {
+		margin-bottom: 10px;
+	}
+	.detail-comment .comment-text h4 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.detail-comment .comment-content .mob p {
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+	}
+	.detail-comment .comment-text p {
+		display: none;
+	}
+	.detail-comment .more-comment a {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.comment-form {
+		padding: 10px;
+	}
+	.detail-payment-cards {
+		padding-bottom: 40px;
+	}
+	header .navbar .dropdown .dropdown-toggle[aria-expanded="true"] .icon span.one {
+		top: 4px;
+	}
+	header .navbar .dropdown .dropdown-toggle[aria-expanded="true"] .icon span.three {
+		top: -4px;
+	}
+	header .navbar-expand-lg .navbar-nav .dropdown-menu {
+		position: absolute;
+		min-width: 100%;
+		margin-top: 0;
+	}
+	header .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	header .navbar .dropdown {
+		position: unset;
+	}
+	.head-drop {
+		min-width: 100%;
+		width: 100%;
+		padding: 20px;
+	}
+	.payment-item .item-text p {
+		width: 140px;
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.payment-info .info-summa p, .payment-info .info-summa span, .payment-info .info-promo p,
+	.payment-info .info-top span, .payment-info .info-top p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.payment-item .item-right .item-price {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.payment-item .item-right .item-price p {
+		margin-right: 0;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.payment-item .item-right .item-delete {
+		display: flex;
+		align-items: center;
+		margin-left: 0;
+	}
+	.payment-item .item-right .item-delete .text {
+		font-size: 13px;
+		line-height: 14px;
+	}
+	.payment-item .item-right .item-delete svg {
+		width: 15px;
+		height: 15px;
+	}
+	.head-drop.active {
+		top: 65px;
+	}
+	.head-card {
+		position: unset;
+	}
+	.head-drop .arrow {
+		right: 20px;
+	}
+	.catalog-sec {
+		padding: 30px 0;
+	}
+	.filter-btn.active .default,
+	.filter-btn .hover {
+		display: none;
+	}
+	.filter-btn.active .hover {
+		display: block;
+	}
+	.catalog-col {
+		position: absolute;
+		top: 85px;
+		right: -1000px;
+		width: 100%;
+		z-index: 10;
+		background: #222326;
+		height: 100%;
+		transition: .5s all ease;
+	}
+	.catalog-side {
+		height: 290px;
+	}
+	.catalog-sec {
+		position: relative;
+	}
+	.catalog-sec.active {
+		background: #222326;
+	}
+	.catalog-sec.active .catalog-col {
+		right: 0;
+	}
+	.title h3 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.payment-sec .payment-in .payment-name p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.payment-sec .payment-in .payment-name span {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.payment-sec .payment-img img {
+		width: 90%;
+	}
+	.payment-sec .payment-methods {
+		padding: 15px;
+		align-items: flex-start;
+	}
+	.payment-item .item-img img {
+		min-width: 65px;
+		height: 65px;
+	}
+	.payment-detail .payment-detail-top .form-group span {
+		font-size: 16px;
+		line-height: 18px;
+	}
 
+	.head-drop .payment-item .item-img img {
+		min-width: 80px;
+		height: 80px;
+	}
+}
 
 
 

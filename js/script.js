@@ -5,6 +5,12 @@ $(function (){
         $('.head-drop').toggleClass('active');
     });
 
+    $('.filter-btn').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.catalog-sec').toggleClass('active');
+    });
+
     $(document).mouseup(function (e){
         var div = $(".head-drop");
         if (!div.is(e.target) 

@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="header-fluid head-con">
 				<nav class="navbar navbar-expand-lg">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand pc" href="#">
 					  <img src="images/logo.png" alt="">
 					  <span>PS-STORE</span>
 					</a>
@@ -27,7 +27,7 @@
 								  <span class="two"></span>
 								  <span class="three"></span>
 							  </span>
-							  <span class="text">Каталог</span>
+							  <span class="text pc">Каталог</span>
 						  </a>
 						  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="#">Игры для Ps4 <img src="images/show-more-green-arrow.svg" alt=""></a></li>
@@ -38,11 +38,15 @@
 							<li><a class="dropdown-item" href="#">Карты оплаты <img src="images/show-more-green-arrow.svg" alt=""></a></li>
 						  </ul>
 						</li>
-						<form class="search-block d-flex" id="header-search">
+						<form class="search-block d-flex pc" id="header-search">
 						  <input type="text" placeholder="Поиск" aria-label="Search">
 						  <button class="search-btn" type="submit"><img src="images/search-icon.svg" alt=""></button>
 						</form>
 					  </ul>
+
+					  <div class="mob">
+						<a href="#!"><img src="images/logo.png" alt=""></a>
+					  </div>
 
 					  <div class="header-right">
 						  <a href="#!" class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -325,7 +329,7 @@
 						</div>
 					</div>
 					<div class="col-xl-5">
-						<div class="row footer-sponsor">
+						<div class="row footer-sponsor pc">
 							<div class="col-lg-4">
 								<img src="images/sponsor-enot.png" alt="">
 							</div>
@@ -348,7 +352,7 @@
 							<div class="ftr-info">
 								<p>2023 © ps-store.ru</p>
 							</div>
-							<div class="back-top">
+							<div class="back-top pc">
 								<a href="#!" id="scroll-top">Вверх <img src="images/top-arrow.svg" alt=""></a>
 							</div>
 						</div>
@@ -358,11 +362,6 @@
 		</footer>
 	</div>
 
-	<!-- Button trigger modal -->
-	<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-		Launch demo modal
-	</button> -->
-	
 	<!-- Modal login -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -375,7 +374,7 @@
 						<div class="modal-form">
 							<div class="form-group">
 								<span>логин</span>
-								<input type="text" name="login" id="login">
+								<input type="text" name="modal-login" id="modal-login">
 							</div>
 							<div class="form-group">
 								<div class="form-in">
@@ -423,7 +422,7 @@
 							</div>
 							<div class="form-group">
 								<span>Подтверждение пароля</span>
-								<input type="password" name="login" id="login">
+								<input type="password" name="reg-login" id="reg-login">
 							</div>
 							<div class="modal-form-btn">
 								<button type="submit">войти</button>
