@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Personal Cabinet</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header-fluid head-con">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand pc" href="#">
+						<img src="images/logo.png" alt="">
+						<span>PS-STORE</span>
+					</a>
+					<div class="navbar-collapse">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<span class="icon">
+										<span class="one"></span>
+										<span class="two"></span>
+										<span class="three"></span>
+									</span>
+									<span class="text pc">Каталог</span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Игры для Ps4 <img src="images/show-more-green-arrow.svg"
+												alt=""></a>
+									</li>
+									<li><a class="dropdown-item" href="#">Игры для Ps4 VR <img src="images/show-more-green-arrow.svg"
+												alt=""></a></li>
+									<li><a class="dropdown-item" href="#">Игры для Ps5 <img src="images/show-more-green-arrow.svg"
+												alt=""></a>
+									</li>
+									<li><a class="dropdown-item" href="#">Игры для Ps5 VR <img src="images/show-more-green-arrow.svg"
+												alt=""></a></li>
+									<li><a class="dropdown-item" href="#">Подписка PlayStation Plus <img
+												src="images/show-more-green-arrow.svg" alt=""></a></li>
+									<li><a class="dropdown-item" href="#">Карты оплаты <img src="images/show-more-green-arrow.svg"
+												alt=""></a>
+									</li>
+								</ul>
+							</li>
+							<form class="search-block d-flex pc" id="header-search">
+								<input type="text" placeholder="Поиск" aria-label="Search">
+								<button class="search-btn" type="submit"><img src="images/search-icon.svg" alt=""></button>
+							</form>
+						</ul>
+
+						<div class="mob">
+							<a href="#!"><img src="images/logo.png" alt=""></a>
+						</div>
+
+						<div class="header-right">
+							<a href="#!" class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M26.48 27.1493C27.0696 27.0264 27.4207 26.4107 27.1458 25.8748C26.3487 24.3209 25.0254 22.9554 23.3052 21.9287C21.2095 20.678 18.6417 20 16 20C13.3584 20 10.7906 20.6779 8.69491 21.9287C6.97466 22.9554 5.65139 24.3209 4.85432 25.8748C4.57944 26.4107 4.93046 27.0264 5.52008 27.1493L7.83918 27.6326C13.2219 28.7544 18.7782 28.7544 24.1609 27.6326L26.48 27.1493Z"
+										fill="white" />
+									<circle cx="16" cy="10.6667" r="6.66667" fill="white" />
+								</svg>
+							</a>
+							<a href="#!" class="favorite-btn">
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M5.93428 18.5443L15.3154 27.3568C15.6398 27.6616 15.802 27.814 16 27.814C16.1981 27.814 16.3603 27.6616 16.6847 27.3568L26.0658 18.5443C28.674 16.0941 28.9908 12.0621 26.7971 9.23476L26.3846 8.70312C23.7604 5.32077 18.4929 5.88802 16.6489 9.75154C16.3885 10.2973 15.6116 10.2973 15.3512 9.75154C13.5072 5.88802 8.23967 5.32077 5.61544 8.70312L5.20296 9.23476C3.0093 12.0621 3.32604 16.0941 5.93428 18.5443Z"
+										stroke="white" stroke-width="2" />
+								</svg>
+							</a>
+							<div class="head-card">
+								<a href="#!" class="cart-btn">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M10.9473 16L10.9473 10.6667C10.9473 7.72115 13.3351 5.33334 16.2806 5.33334V5.33334C19.2261 5.33334 21.6139 7.72115 21.6139 10.6667L21.6139 16"
+											stroke="white" stroke-width="2" stroke-linecap="round" />
+										<path
+											d="M5.23825 15.6678C5.38333 13.9269 5.45587 13.0565 6.02995 12.5282C6.60404 12 7.4775 12 9.22444 12H23.1967C24.9436 12 25.8171 12 26.3912 12.5282C26.9653 13.0565 27.0378 13.9269 27.1829 15.6678L28.0301 25.8339C28.1145 26.8474 28.1568 27.3542 27.8597 27.6771C27.5626 28 27.054 28 26.037 28H6.38417C5.36712 28 4.85859 28 4.56149 27.6771C4.26439 27.3542 4.30662 26.8474 4.39108 25.8339L5.23825 15.6678Z"
+											stroke="white" stroke-width="2" />
+									</svg>
+									<span class="cart-count">21</span>
+								</a>
+
+								<div class="head-drop">
+									<div class="arrow">
+										<img src="images/drop-arrow-top.png" alt="">
+									</div>
+
+									<div class="cart-title">
+										<h3>Корзина </h3>
+										<span>(2 игры)</span>
+									</div>
+									<div class="payment-item">
+										<div class="item-left">
+											<div class="item-img">
+												<img src="images/payment-img.jpg" alt="">
+											</div>
+											<div class="item-text">
+												<p>DOOM Eternal Deluxe Edition - PS4 and PS5</p>
+											</div>
+										</div>
+										<div class="item-right">
+											<div class="item-price">
+												<p>$46.99</p>
+												<del>$39.99</del>
+											</div>
+											<a href="#!" class="item-delete">
+												<span class="icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.5 11.25L7.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path d="M10.5 11.25L10.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path
+															d="M2.25 5.25H15.75V5.25C15.5178 5.25 15.4017 5.25 15.304 5.25963C14.3544 5.35315 13.6032 6.10441 13.5096 7.05397C13.5 7.15175 13.5 7.26783 13.5 7.5V11C13.5 12.8856 13.5 13.8284 12.9142 14.4142C12.3284 15 11.3856 15 9.5 15H8.5C6.61438 15 5.67157 15 5.08579 14.4142C4.5 13.8284 4.5 12.8856 4.5 11V7.5C4.5 7.26783 4.5 7.15175 4.49037 7.05397C4.39685 6.10441 3.64559 5.35315 2.69603 5.25963C2.59825 5.25 2.48217 5.25 2.25 5.25V5.25Z"
+															stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path
+															d="M7.55111 2.52794C7.63657 2.44821 7.82489 2.37775 8.08686 2.32749C8.34882 2.27724 8.6698 2.25 9 2.25C9.3302 2.25 9.65118 2.27724 9.91314 2.32749C10.1751 2.37775 10.3634 2.44821 10.4489 2.52794"
+															stroke="#676767" stroke-width="2" stroke-linecap="round" />
+													</svg>
+												</span>
+												<span class="text">удалить</span>
+											</a>
+										</div>
+									</div>
+									<div class="payment-item">
+										<div class="item-left">
+											<div class="item-img">
+												<img src="images/payment-img.jpg" alt="">
+											</div>
+											<div class="item-text">
+												<p>DOOM Eternal Deluxe Edition - PS4 and PS5</p>
+											</div>
+										</div>
+										<div class="item-right">
+											<div class="item-price">
+												<p>$46.99</p>
+												<del>$39.99</del>
+											</div>
+											<a href="#!" class="item-delete">
+												<span class="icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.5 11.25L7.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path d="M10.5 11.25L10.5 9" stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path
+															d="M2.25 5.25H15.75V5.25C15.5178 5.25 15.4017 5.25 15.304 5.25963C14.3544 5.35315 13.6032 6.10441 13.5096 7.05397C13.5 7.15175 13.5 7.26783 13.5 7.5V11C13.5 12.8856 13.5 13.8284 12.9142 14.4142C12.3284 15 11.3856 15 9.5 15H8.5C6.61438 15 5.67157 15 5.08579 14.4142C4.5 13.8284 4.5 12.8856 4.5 11V7.5C4.5 7.26783 4.5 7.15175 4.49037 7.05397C4.39685 6.10441 3.64559 5.35315 2.69603 5.25963C2.59825 5.25 2.48217 5.25 2.25 5.25V5.25Z"
+															stroke="#676767" stroke-width="2" stroke-linecap="round" />
+														<path
+															d="M7.55111 2.52794C7.63657 2.44821 7.82489 2.37775 8.08686 2.32749C8.34882 2.27724 8.6698 2.25 9 2.25C9.3302 2.25 9.65118 2.27724 9.91314 2.32749C10.1751 2.37775 10.3634 2.44821 10.4489 2.52794"
+															stroke="#676767" stroke-width="2" stroke-linecap="round" />
+													</svg>
+												</span>
+												<span class="text">удалить</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="payment-info">
+										<div class="info-top payment-total">
+											<p>Товары</p>
+											<span>93.98 US$</span>
+										</div>
+										<div class="info-promo payment-total">
+											<p>Применить промо-код</p>
+											<div class="form-group">
+												<input type="text" name="promocode2" id="promocode2" placeholder="Промокод">
+												<button type="submit">Применить</button>
+											</div>
+										</div>
+										<div class="info-summa payment-total">
+											<p>Сумма к оплате</p>
+											<span>93.98 US$</span>
+										</div>
+										<div class="info-btn payment-total">
+											<button type="submit">Перейти к оплате</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="blog-part__sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-9 col-sm-12">
+						<div class="title">
+							<h2>Релизный трейлер к выходу Minecraft Legends на PS4 и PS5</h2>
+						</div>
+						<div class="blog-part__sec-box">
+							<img class="w-100" src="images/blog-img/lego-img.png" alt="">
+							<p>Разработчики из Mojang Studios опубликовали релизный трейлер к выходу Minecraft Legends на PlayStation
+								4
+								и PlayStation
+								5, который состоялся на днях.
+								Minecraft Legends — это экшен-приключение, которое рассказывает, как Пиглины, неся порчу из Нижнего
+								мира,
+								распространяют
+								ее по Верхнему миру, уничтожая все на своем пути. Необходимо защитить земли от этой угрозы, разработав
+								стратегию и
+								сражаясь с пиглинами в эпических битвах. Однако нужно быть осторожным, так как они не сдаются без боя.
+								Захватывайте базы
+								пиглинов днем и защищайте союзников по ночам. Исследуйте красивые биомы, полные сокровищ и опасностей,
+								заводите новых
+								друзей и встречайтесь со знакомыми мобами. Спасите мир вместе со своими союзниками.</p>
+						</div>
+
+						<div class="blog-part__vide-box">
+							<div class="col-12">
+								<iframe width="100%" height="552px" src="https://www.youtube.com/embed/O-ENsQsxZnE"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div class="blog-part__buy-game">
+							<div class="blog-part__buy-title">
+								<h2>Купить игру вы можете у нас</h2>
+							</div>
+							<div class="blog-part__buy-img">
+								<img src="images/blog-img/buy-game-img.png" alt="">
+							</div>
+						</div>
+
+						<div class="add-comment mb-0">
+							<div class="title flex-column align-items-start">
+								<h2>Добавить комментарий</h2>
+								<p>Для отправки комментария вам необходимо <a href="#!">авторизоваться</a></p>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<form class="add-comment__form text-end">
+										<textarea></textarea>
+										<button class="btn-comment">Оставить комментарий</button>
+									</form>
+								</div>
+							</div>
+
+							<div class="add-comment__boxes">
+								<div class="add-comment__box d-flex align-items-start">
+									<div class="add-comment__box-img">
+										<img class="rounded-circle" src="images/blog-img/gamer1.png" alt="">
+									</div>
+									<div class="add-comment__box-info w-100">
+										<div class="add-comment__box-info-header d-flex align-items-center justify-content-between">
+											<h4 class="add-comment__box-info-title">PapaNya</h4>
+											<span class="add-comment__box-info-date">24.04.2023 в 09:49</span>
+										</div>
+										<p class="add-comment__box-info-paragrph">Contrary to popular belief, Lorem Ipsum is not simply
+											random text. It has roots in a piece of classical Latin literature
+											from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+											College in Virginia,
+											looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+											through the cites of
+											the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+											sections 1.10.32 and 1.10.33
+											of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+											This book is a treatise
+											on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+											"Lorem ipsum dolor sit
+											amet..", comes from a line in section 1.10.32.</p>
+									</div>
+								</div>
+
+								<div class="add-comment__box d-flex align-items-start">
+									<div class="add-comment__box-img">
+										<img class="rounded-circle" src="images/blog-img/cat1.png" alt="">
+									</div>
+									<div class="add-comment__box-info w-100">
+										<div class="add-comment__box-info-header d-flex align-items-center justify-content-between">
+											<h4 class="add-comment__box-info-title">122Chmo</h4>
+											<span class="add-comment__box-info-date">24.04.2023 в 10:49</span>
+										</div>
+										<p class="add-comment__box-info-paragrph">Я был в шоке.............................</p>
+									</div>
+								</div>
+
+								<div class="add-comment__box d-flex align-items-start mb-5">
+									<div class="add-comment__box-img">
+										<img class="rounded-circle" src="images/blog-img/cat2.png" alt="">
+									</div>
+									<div class="add-comment__box-info w-100">
+										<div class="add-comment__box-info-header d-flex align-items-center justify-content-between">
+											<h4 class="add-comment__box-info-title">123Chmo</h4>
+											<span class="add-comment__box-info-date">24.04.2023 в 10:49</span>
+										</div>
+										<p class="add-comment__box-info-paragrph">Я тоже............</p>
+									</div>
+								</div>
+								<a class="btn-comment w-100 text-center mb-0" href="#!">Загрузить еще</a>
+							</div>
+
+						</div>
+
+						<div class="blog-sec">
+							<div class="title">
+								<h2>Похожие новости</h2>
+							</div>
+							<div class="blog-sec__products">
+								<div class="row">
+									<div class="col-lg-4 col-md-6 col-sm-6">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img3.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">Релизный трейлер к выходу Horizon Forbidden West:
+													Burning
+													Shores на
+													PS5</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img2.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">PlayStation Plus. Апрель 2023 (обновления)
+												</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img4.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">Sony запатентовала новую технологию тактильного отклика
+													– если патент
+													воплотят в жизнь, геймпады DualSense смогут
+													симулировать температуру.
+												</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row mt-4">
+									<div class="col-lg-4 col-md-6 col-sm-6">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img3.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">Релизный трейлер к выходу Horizon Forbidden West:
+													Burning
+													Shores на
+													PS5</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6 col-sm-6">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img4.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">Релизный трейлер к выходу Horizon Forbidden West:
+													Burning
+													Shores на
+													PS5
+												</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-12 col-sm-12">
+										<div class="products-box">
+											<div class="products-box__img">
+												<img src="images/blog-img/blog-img2.jpg" alt="">
+											</div>
+											<div class="products-box__content">
+												<h4 class="products-box__content-title">Релизный трейлер к выходу Horizon Forbidden West:
+													Burning
+													Shores на
+													PS5
+												</h4>
+												<span class="products-box__content-date">16.04.2023</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="subscription-box mt-5">
+								<div class="row">
+									<div class="col-12 d-flex align-items-center justify-content-center">
+										<div class="subscription-box__img">
+											<img src="images/blog-img/blog-banner-img1.png" alt="">
+										</div>
+										<div class="subscription-box__content text-center">
+											<h3>Приобрести подписку PlayStation Plus по самой выгодной цене</h3>
+											<a class="subscription-box__content-btn" href="#!">Перейти в каталог</a>
+										</div>
+										<div class="subscription-box__img">
+											<img src="images/blog-img/blog-banner-img2.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2 offset-lg-1 col-6 col-md-3 custom-col">
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img1.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img4.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img3.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img2.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img3.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+
+								<img src="images/game-img5.jpg" alt="">
+
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img1.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img4.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img3.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img2.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img3.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img5.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img1.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+						<div class="game-block">
+							<div class="game-img">
+								<span class="device-model">PS5/PS4</span>
+								<span class="discount-percent">-75%</span>
+						
+								<img src="images/game-img4.jpg" alt="">
+						
+								<a href="#!" class="add-to-cart">Добавить в корзину <img src="images/add-cart-icon.svg" alt=""></a>
+							</div>
+							<div class="game-text">
+								<div class="game-title">
+									<h4>RESIDENT EVIL 2</h4>
+								</div>
+								<div class="game-price d-flex">
+									<span>$46.99</span>
+									<del>$39.99</del>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-7">
+						<div class="footer-menu">
+							<a href="#!"><img src="images/footer-logo.png" alt=""></a>
+							<a href="#!">О нас</a>
+							<a href="#!">Контакты</a>
+							<a href="#!">Политика конфиденциальности</a>
+							<a href="#!">Условия</a>
+						</div>
+					</div>
+					<div class="col-xl-5">
+						<div class="row footer-sponsor pc">
+							<div class="col-lg-4">
+								<img src="images/sponsor-enot.png" alt="">
+							</div>
+							<div class="col-lg-4">
+								<img src="images/sponsor-tinkoff.png" alt="">
+							</div>
+							<div class="col-lg-4">
+								<img src="images/sponsor-crypto.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-end">
+							<div class="ftr-left">
+								<p>ИНН 1563124258170</p>
+								<p>ОГРНИП 9615225000321264</p>
+							</div>
+							<div class="ftr-info">
+								<p>2023 © ps-store.ru</p>
+							</div>
+							<div class="back-top pc">
+								<a href="#!" id="scroll-top">Вверх <img src="images/top-arrow.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- Modal login -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="modal-title">
+						<p>Введите данные для входа</p>
+					</div>
+					<form action="#!">
+						<div class="modal-form">
+							<div class="form-group">
+								<span>логин</span>
+								<input type="text" name="modal-login" id="modal-login">
+							</div>
+							<div class="form-group">
+								<div class="form-in">
+									<span>Пароль</span>
+									<a href="#!">Забыли пароль?</a>
+								</div>
+								<input type="password" name="password" id="password">
+							</div>
+							<div class="modal-form-btn">
+								<button type="submit">войти</button>
+							</div>
+
+							<div class="modal-end">
+								<p>Новый пользователь?</p>
+								<a href="#!" data-bs-toggle="modal" data-bs-target="#exampleReg">Зарегистрироваться</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal reg -->
+	<div class="modal fade" id="exampleReg" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="modal-title">
+						<p>Введите данные для входа</p>
+					</div>
+					<form action="#!">
+						<div class="modal-form">
+							<div class="form-group">
+								<span>логин</span>
+								<input type="text" name="login" id="login">
+							</div>
+							<div class="form-group">
+								<span>E-mail</span>
+								<input type="email" name="email" id="email">
+							</div>
+							<div class="form-group">
+								<span>Пароль</span>
+								<input type="password" name="modal-pass" id="modal-pass">
+							</div>
+							<div class="form-group">
+								<span>Подтверждение пароля</span>
+								<input type="password" name="reg-login" id="reg-login">
+							</div>
+							<div class="modal-form-btn">
+								<button type="submit">войти</button>
+								<a href="#!">Авторизоваться</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
